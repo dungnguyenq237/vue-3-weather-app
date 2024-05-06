@@ -94,6 +94,16 @@ const isFirstTimeLoad = computed(() => {
   animation: animateCloud calc(150s / 2) linear infinite alternate;
 }
 
+@media screen and (max-width: 768px) {
+  .weather-clouds::after {
+    top: -30px;
+  }
+
+  .weather-clouds::before {
+    top: -100px;
+  }
+}
+
 @keyframes animateCloud {
   0% {
     background-position: -1000px 0;

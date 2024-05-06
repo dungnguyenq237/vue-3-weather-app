@@ -8,11 +8,12 @@ Ensure you have Node version 20.9.0 installed on your machine.
 
 ## Installation
 
-To get started with this project, follow these steps:
+To get started with this project, follow these steps ( or you can copy right away to your terminal then run the whole command ):
 
 ```bash
 git clone https://github.com/dungnguyenq237/vue-3-weather-app.git
 cd vue-3-weather-app
 npm install -g pnpm
 pnpm i
+pnpm dev
 ```
