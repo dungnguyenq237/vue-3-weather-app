@@ -9,18 +9,16 @@ const isFirstTimeLoad = computed(() => {
 </script>
 
 <template>
-  <div>
-    <div
-      class="transition-bg-image-[2s] absolute left-0 top-0 h-screen w-full bg-cover bg-center bg-no-repeat"
-      :class="[
-        { 'weather-default': isFirstTimeLoad },
-        { 'weather-rain': info === 'Rain' },
-        { 'weather-snow': info === 'Snow' },
-        { 'weather-clear': info === 'Clear' || info === 'Mist' },
-        { 'weather-clouds': info === 'Clouds' || info === 'Haze' },
-        { error: store.state.isError }]"
-    />
-  </div>
+  <div
+    class="transition-bg-image-[2s] absolute left-0 top-0 h-screen w-full bg-cover bg-center bg-no-repeat"
+    :class="[
+      { 'weather-default': isFirstTimeLoad },
+      { 'weather-rain': info === 'Rain' },
+      { 'weather-snow': info === 'Snow' },
+      { 'weather-clear': ['Clear', 'Mist'].includes(info) },
+      { 'weather-clouds': ['Clouds', 'Haze'].includes(info) },
+      { error: store.state.isError }]"
+  />
 </template>
 
 <style scoped>
@@ -47,13 +45,13 @@ const isFirstTimeLoad = computed(() => {
 }
 
 .weather-clear {
-  background-image: url('../assets/images/clear.jpg');
+  background-image: url('https://dngq237-static-images.s3.ap-southeast-1.amazonaws.com/clear.jpg');
 }
 
 .weather-clear::after,
 .weather-clear::before {
   content: '';
-  background-image: url('../assets/images/fog.png');
+  background-image: url('https://dngq237-static-images.s3.ap-southeast-1.amazonaws.com/fog.png');
   height: 810px;
   position: absolute;
   width: 100%;
@@ -71,13 +69,13 @@ const isFirstTimeLoad = computed(() => {
 }
 
 .weather-clouds {
-  background-image: url('../assets/images/clouds.jpg');
+  background-image: url('https://dngq237-static-images.s3.ap-southeast-1.amazonaws.com/clouds.jpg');
 }
 
 .weather-clouds::after,
 .weather-clouds::before {
   content: '';
-  background-image: url('../assets/images/fog.png');
+  background-image: url('https://dngq237-static-images.s3.ap-southeast-1.amazonaws.com/fog.png');
   height: 810px;
   position: absolute;
   width: 100%;
@@ -90,7 +88,7 @@ const isFirstTimeLoad = computed(() => {
 }
 
 .weather-clouds::before {
-  top: 300px;
+  top: 0;
   animation: animateCloud calc(150s / 2) linear infinite alternate;
 }
 
@@ -115,7 +113,7 @@ const isFirstTimeLoad = computed(() => {
 }
 
 .weather-snow {
-  background-image: url('../assets/images/snow.jpg');
+  background-image: url('https://dngq237-static-images.s3.ap-southeast-1.amazonaws.com/snow.jpg');
 }
 
 .weather-snow::after {
@@ -127,9 +125,10 @@ const isFirstTimeLoad = computed(() => {
   height: 100vh;
   animation: animateSnow 15s cubic-bezier(0.28, 0.54, 0.47, 0.56) infinite
     normal;
-  background-image: url('../assets/images/snow2.png'),
-    url('../assets/images/snow3.png'), url('../assets/images/snow4.png'),
-    url('../assets/images/snow3.png');
+  background-image: url('https://dngq237-static-images.s3.ap-southeast-1.amazonaws.com/snow2.png'),
+    url('https://dngq237-static-images.s3.ap-southeast-1.amazonaws.com/snow3.png'),
+    url('https://dngq237-static-images.s3.ap-southeast-1.amazonaws.com/snow4.png'),
+    url('https://dngq237-static-images.s3.ap-southeast-1.amazonaws.com/snow3.png');
 }
 
 @keyframes animateSnow {
@@ -149,7 +148,7 @@ const isFirstTimeLoad = computed(() => {
 }
 
 .weather-rain {
-  background-image: url('../assets/images/rain-bg.jpg');
+  background-image: url('https://dngq237-static-images.s3.ap-southeast-1.amazonaws.com/rain-bg.jpg');
 }
 
 .weather-rain::after {
@@ -162,8 +161,8 @@ const isFirstTimeLoad = computed(() => {
   background-repeat: repeat;
   animation: animateRain 70s cubic-bezier(0.28, 0.54, 0.47, 0.56) infinite
     normal;
-  background-image: url('../assets/images/rain-1.png'),
-    url('../assets/images/rain-2.png');
+  background-image: url('https://dngq237-static-images.s3.ap-southeast-1.amazonaws.com/rain-1.png'),
+    url('https://dngq237-static-images.s3.ap-southeast-1.amazonaws.com/rain-2.png');
   opacity: 0.8;
 }
 
@@ -184,6 +183,6 @@ const isFirstTimeLoad = computed(() => {
 }
 
 .error {
-  background-image: url('../assets/images/error.jpg');
+  background-image: url('https://dngq237-static-images.s3.ap-southeast-1.amazonaws.com/error.jpg');
 }
 </style>

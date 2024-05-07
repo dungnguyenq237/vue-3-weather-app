@@ -8,24 +8,18 @@ importers:
 
   .:
     dependencies:
-      '@ikun-ui/core':
-        specifier: ^0.2.6
-        version: 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))(moment@2.30.1)(svelte@4.2.15)(typescript@5.4.5)(unocss@0.59.4(postcss@8.4.38)(rollup@4.14.3)(vite@5.2.9(@types/node@20.12.7)))
       '@vueuse/core':
         specifier: ^10.9.0
         version: 10.9.0(vue@3.4.23(typescript@5.4.5))
       axios:
         specifier: ^1.6.8
         version: 1.6.8
-      onu-ui:
-        specifier: 1.0.14-beta.2
-        version: 1.0.14-beta.2(vue@3.4.23(typescript@5.4.5))
+      lodash:
+        specifier: ^4.17.21
+        version: 4.17.21
       vue:
         specifier: ^3.4.23
         version: 3.4.23(typescript@5.4.5)
-      vue-router:
-        specifier: ^4.3.2
-        version: 4.3.2(vue@3.4.23(typescript@5.4.5))
     devDependencies:
       '@antfu/eslint-config':
         specifier: ^2.15.0
@@ -33,9 +27,6 @@ importers:
       '@iconify-json/carbon':
         specifier: ^1.1.31
         version: 1.1.31
-      '@ikun-ui/preset':
-        specifier: ^0.2.6
-        version: 0.2.6
       '@types/node':
         specifier: ^20.12.7
         version: 20.12.7
@@ -93,9 +84,6 @@ importers:
       unplugin-vue-macros:
         specifier: ^2.9.1
         version: 2.9.1(@vueuse/core@10.9.0(vue@3.4.23(typescript@5.4.5)))(esbuild@0.20.2)(rollup@4.14.3)(typescript@5.4.5)(vite@5.2.9(@types/node@20.12.7))(vue@3.4.23(typescript@5.4.5))
-      unplugin-vue-router:
-        specifier: ^0.8.6
-        version: 0.8.6(rollup@4.14.3)(vue-router@4.3.2(vue@3.4.23(typescript@5.4.5)))(vue@3.4.23(typescript@5.4.5))
       vite:
         specifier: ^5.2.9
         version: 5.2.9(@types/node@20.12.7)
@@ -347,35 +335,6 @@ packages:
     resolution: {integrity: sha512-+j7a5c253RfKh8iABBhywc8NSfP5LURe7Uh4qpsh6jc+aLJguvmIUBdjSdEMQv2bENrCR5MfRdjGo7vzS/ob7w==}
     engines: {node: '>=6.9.0'}
 
-  '@baiwusanyu/utils-com@1.0.18':
-    resolution: {integrity: sha512-BZ0sF4igk14ZNlIG2stAFjNYtlRcFBBcbvPv283IqoI72zQiyvR/WwTh4QqMvjKo4A0Pl/Ms3N+7G9ucwV1dAg==}
-    peerDependencies:
-      ansi-colors: ^4.1.3
-      hash-sum: ^2.0.0
-
-  '@baiwusanyu/utils-date@1.0.18':
-    resolution: {integrity: sha512-PdiA92JUaBHE0cIKgl5yrqZ0iiMMsEpEkmvpYLYSj4njyf9XR9g21pGIrzyzlOvK9KIBBi56f4zpfRKwAk/q2Q==}
-    peerDependencies:
-      ansi-colors: ^4.1.3
-      moment: ^2.29.4
-
-  '@baiwusanyu/utils-is@1.0.18':
-    resolution: {integrity: sha512-wXsgXCrgfSS3kMftaWNBbN6Ew8e6epbpDoBtCLKylwfm0OX2v/z4iMCYjbxivKrByMYBy9ZdANRH13//hTke1A==}
-
-  '@baiwusanyu/utils-log@1.0.18':
-    resolution: {integrity: sha512-XpvhfCd3W4bsBNzTZp0ChZ247vAHeX/9FVuzhBXJ9/ZCCw/2tkaKxN/4Cahn89nXTXpLrdnfolqKbJagbmWifA==}
-    peerDependencies:
-      ansi-colors: ^4.1.3
-
-  '@baiwusanyu/utils-normalize@1.0.18':
-    resolution: {integrity: sha512-SFuBZJk6wvI1yrteZBRI5fWYKDo24qtxqYlqrMFX4RM7FMDoYlon6tC7W6xG50dgAqKPNRyjdvszPtl9+Wk4vA==}
-
-  '@baiwusanyu/utils-obj@1.0.18':
-    resolution: {integrity: sha512-fEJEUEoA1t7lik21p6P1y1coEc6TIulEthVr/MXyWnrE2/MqtkH+kiNozoHOD6NSFBofTh2pNHTJfqBiWgQUSA==}
-
-  '@baiwusanyu/utils-task@1.0.18':
-    resolution: {integrity: sha512-/0hlK00c3vje4XtOUW2UTrhneAYopX/vEqN5OcpZLGppstU02Fo82QpyJUSVZgO2XH3fGouJl/97bTmWjuFXsA==}
-
   '@clack/core@0.3.4':
     resolution: {integrity: sha512-H4hxZDXgHtWTwV3RAVenqcC4VbJZNegbBjlPvzOzCouXtS2y3sDvlO3IsbrPNWuLWPPlYVYPghQdSF64683Ldw==}
 
@@ -577,230 +536,6 @@ packages:
   '@iconify/utils@2.1.23':
     resolution: {integrity: sha512-YGNbHKM5tyDvdWZ92y2mIkrfvm5Fvhe6WJSkWu7vvOFhMtYDP0casZpoRz0XEHZCrYsR4stdGT3cZ52yp5qZdQ==}
 
-  '@ikun-ui/affix@0.2.6':
-    resolution: {integrity: sha512-D3kJlQmCqW9zR1vD+uObXTDbEcuPUeYMWVecaPXNIOvCb+2o0M5Txf1SMt5g4TqF3MCNGIGOIiNRp1DPpeQcog==}
-
-  '@ikun-ui/alert@0.2.6':
-    resolution: {integrity: sha512-Z/na8CuVCmp+MT58TpND0f+oxLPYEZThDViWiFMYqJtrDqEBv5O+M0xLIfyq4z2lsGDDpnxa+jIBMm9DvnOiXw==}
-
-  '@ikun-ui/auto-complete@0.2.6':
-    resolution: {integrity: sha512-beNnOgK4iwFUb/D8T1g6V1Of7nVJT4pldduTdykIfaF7EKRknLHOgKGvnZDpLaPhjsEX/CQpJjKkqj3/lzdZfA==}
-
-  '@ikun-ui/avatar@0.2.6':
-    resolution: {integrity: sha512-FaLUIkpFeNIPginT11pZhiMTWXEd8DC9mvreyL7Iv4ASFAihX4V0HhYpRn7MXELc2rTypb02MebuVHTsl6mCKg==}
-
-  '@ikun-ui/backtop@0.2.6':
-    resolution: {integrity: sha512-xxlz2sWF4rD7cRn3FF56OHw9PhPnhEOme7rwn6TbmbKUd3/z4wBzEFVDINtv807D70NdzyFhWXWpawuwgFjxoQ==}
-
-  '@ikun-ui/badge@0.2.6':
-    resolution: {integrity: sha512-KX/2WIP17qQMzc8iAYoF7BvnnTLOe4qRgCW+GLLPa36u1v2krTZNWvHFHZzeyWzS/muMm13gWNoza1sLRhJWzA==}
-
-  '@ikun-ui/breadcrumb-item@0.2.6':
-    resolution: {integrity: sha512-ZtmMnnhD27NBaUoNn6wvFQrJKjHqfpXai/2IifilHrjgMbg8Kp1VykhdQAxg77UG+7yIQ5jlpibD5FTSjGKVHA==}
-
-  '@ikun-ui/breadcrumb@0.2.6':
-    resolution: {integrity: sha512-WnxNbIihRw8PHJjgRH/K2jFjHyfzNbUyp6VDw2AfKRonn0F7+l7sLY8LPbfIrXnJbQbi1K5jLNrjEnt/GQf5ZA==}
-
-  '@ikun-ui/button-group@0.2.6':
-    resolution: {integrity: sha512-uvzkBpjoPuzX3K8hNmzqRc32isS5iSvZjzXTl5L1goQtuJaWzkFAbd02NpiV9CBniS93PQTbw/0PgGsgv3aZSg==}
-
-  '@ikun-ui/button@0.2.6':
-    resolution: {integrity: sha512-P3xvDr2qq6x1J8ATdHZO3UBZB3mWlMHP6fnjstWfXZ0zCvgYXuXNpGTrS8WNwkS1Qufd4kr7eGIzJNg7VjVLTg==}
-
-  '@ikun-ui/calendar@0.2.6':
-    resolution: {integrity: sha512-iJdNlkgNtCez+5MVthtwNA7Tw3nw8i6htwd1Y1arhw8N4hVXVXHfsv7qPQf3zA+PiL1nxJf/eokFhVrzDXHCdw==}
-
-  '@ikun-ui/card@0.2.6':
-    resolution: {integrity: sha512-TIVyVe/ZpUZUXEYtlC3W1q+9/nmCOnwyAq8QEFSkFKHAU9YIpaNouyraEyvu2ZEI1tSg5n8hKUX8uz1E8ba7AQ==}
-
-  '@ikun-ui/carousel@0.2.6':
-    resolution: {integrity: sha512-BBrP9D2uPVH4kstfdMJUSK4+6/UhyTTO9zLm5mOmMVUNq+dhgEPj3l7Hfbi61PheZQkEzWoSdV+o0VQ/BWWEYA==}
-
-  '@ikun-ui/checkbox-group@0.2.6':
-    resolution: {integrity: sha512-0PpKo8qwyMFx0u4gnFrDxwALu18Ts12RhziJoNDe+UkObFxGPSEOAlYFiPQS78AkL1X5hDznLsD55WaZg40ZLg==}
-
-  '@ikun-ui/checkbox@0.2.6':
-    resolution: {integrity: sha512-pU+55sze3DO+087F6U44HOv8zHyl3BqEpvYnlAxbGZiaqCbfIzK7Gn7WOGPJa5fXnhG0XyivY9r4meZnqYz+Pg==}
-
-  '@ikun-ui/client-only@0.2.6':
-    resolution: {integrity: sha512-KMHTfBezSHCr7XGFMc+UicSPLtxwAyg0fCfAoGon2jfcbLFwucnAaqhjS/8pTxuYokUqn9yPsjJwqxPZ9vezDA==}
-
-  '@ikun-ui/collapse-wrapper@0.2.6':
-    resolution: {integrity: sha512-RqHn/PEJtUQ3FO9mGJ5J8NM4wa/7egLsklaEzpWPKzzWNoNZfdatQTfW7DDRXbYDOuQAnB5OSV9UZ4NqgUNvBw==}
-
-  '@ikun-ui/collapse@0.2.6':
-    resolution: {integrity: sha512-W690p/fxsJxCy7zey6dt7LyBMsmP1HScP/xMgAHPgt3zoK0uqGHLb9sp1YsoTgzJUgYIZhVrKhGpvpatnJmiuw==}
-
-  '@ikun-ui/color-picker@0.2.6':
-    resolution: {integrity: sha512-N5rbbA10rHcOvs53tu/YYNis1GuY6ih7zCms2vF8z85L/U1VikDE5DdV5iTjjGTrzUGa7z/zBVfsErIFhyLDGQ==}
-
-  '@ikun-ui/contextmenu@0.2.6':
-    resolution: {integrity: sha512-vBC5MinN59y5kTBi9p1ONHVZnFGZ8vd4ZuCSywGqxOhpbt/hLCLazJGz3HHihZGmQujGU8laxe0x/+b2zm/sNA==}
-
-  '@ikun-ui/core@0.2.6':
-    resolution: {integrity: sha512-XsBJBqdyUflR9xAJjMJMPqaG4QBuJPZ2juyGJaVXjlbf/BlDcGUjTE2S5YRIekcrBt3lgxp8IjwXGGN0U4s6Ww==}
-    engines: {node: '>=14'}
-    peerDependencies:
-      baiwusanyu-utils: ^1.0.18
-      svelte: ^4.0.0
-      unocss: ^0.57.7
-
-  '@ikun-ui/countdown@0.2.6':
-    resolution: {integrity: sha512-OigsFffdnE+wRaPQGs3GMJsYGNQShyNrfqM5m9bdNFa9rHQcfG7g7d54XSp/zWPoO7+V6YwHC4FQc1CD4d2kYg==}
-
-  '@ikun-ui/descriptions-item@0.2.6':
-    resolution: {integrity: sha512-dcSyxFy1GwzcNaD9MEG+I9HwHmjsA2tTKMlSBjg5wivdgU4Bg8GbgxhcC2zqpX+lJsxcbDwsL6bkZumoqbtdMg==}
-
-  '@ikun-ui/descriptions@0.2.6':
-    resolution: {integrity: sha512-ieM2/+sRWRm1xZAMzEUKZ8k2JOR3T8FtbSMv91uJ710ERTUA/vEVjw9ReLpLTyDD0AM9uaZQ/vDk4XMi9wesSQ==}
-
-  '@ikun-ui/divider@0.2.6':
-    resolution: {integrity: sha512-HywqmSiipkaUfsshJbmkfh5+LmrFIrUOtI9rkNDoqcSYLk9EyN1kEQp50nE4BST4s/s41+MtoY6x96IfnXSTbQ==}
-
-  '@ikun-ui/drawer@0.2.6':
-    resolution: {integrity: sha512-mw50ZqRg2UaAfmEkSTUyG2K3BHZQT/EB7iffT2oj9DAByRmbu20BHVZPxFLchrDv9gqIlZTMYZjwRmOO3QIROA==}
-
-  '@ikun-ui/dropdown@0.2.6':
-    resolution: {integrity: sha512-m7TullY/clOC3tFdoYP1SQqg0kyRvwEaLw8qIispnGC0lUBPnkp76TLsc8qe8uZMZksWpL9rkgFzQCbo+ph3XQ==}
-
-  '@ikun-ui/ellipsis@0.2.6':
-    resolution: {integrity: sha512-1RIXTIyLl33swhCrfZMnNaRREA3EZntdJN2/+h8IcfGJw/3Q4+6+RnlZetEqY5AdHPf/c9KT/dF4n5SxFsY7QQ==}
-
-  '@ikun-ui/empty@0.2.6':
-    resolution: {integrity: sha512-IRA8rpTSQIpgEixv6WrsVU5KuijDF++4WTcwo+0CPZORZKWhztox6ZB7WzpyiTax0gK29RXwJ3+6YbChOeb70g==}
-
-  '@ikun-ui/eye-dropper@0.2.6':
-    resolution: {integrity: sha512-NI6O2i4Wp4CZq4v1JDT0k0Mo22n7AZ6GURL/ZIUwR6j2gsa2A8B8jbV3zCBGY/99LuYmhA2EKuUvUhJLbWz5CQ==}
-
-  '@ikun-ui/flex@0.2.6':
-    resolution: {integrity: sha512-00+03STs6y/J3Bq932JfWHUolu80jTSqUXGQQCEmuRRANmQ2Chxnz8tKIbAh70dQGvvq0B5yeh8yRaCdjjoZ2g==}
-
-  '@ikun-ui/form@0.2.6':
-    resolution: {integrity: sha512-u0R7nQTTxqwM2aH18JVQw3Mob36d1ZKg8Fkx/uou2E8brRxFUXfBQWvnmPQ8ozQLKfWPyZOAco4g/P+Q4bLtvQ==}
-
-  '@ikun-ui/grid@0.2.6':
-    resolution: {integrity: sha512-8ooZgfsU1iRHUNDAgvt+1hQWkxU9CDj91X8isDX10Cv/UUTlSqFv/ORMFPwDiIhOZUczFjUvfHCGgs7bcW3rCQ==}
-
-  '@ikun-ui/icon@0.2.6':
-    resolution: {integrity: sha512-BHkOA6xw0qh2zUhM7MvOdnXjR5HIICZxsMqJl91SwWHu3aasHK3X97i0ORIC6In3uCK5n4QMSKz6E4NSaa/O9A==}
-
-  '@ikun-ui/image-view@0.2.6':
-    resolution: {integrity: sha512-y+j+enipa01mhuVbdIBv+fj6vBK+ZtV9U5VhVS1hmOlwuXTu8+QQ0YpNY6x8Wny5q6iqwPdn3ur/ezBrm5O7ow==}
-
-  '@ikun-ui/image@0.2.6':
-    resolution: {integrity: sha512-Pvbm7jxL+MovzhGAi5V29nS6bRFk4j0/y/w0IAxV/TJkXOCh3ngFGXYkIuaj1icTacR6RjvCB0oi0C/uhVxfDw==}
-
-  '@ikun-ui/indicators@0.2.6':
-    resolution: {integrity: sha512-Am7FtvUkqm22BpEqEwTAZ0AeD0N9SexgNouixIybaB24U+zKWIUU9K7ZghRWTPs3HPNdDB/oUs6V+/ewz+kW5Q==}
-
-  '@ikun-ui/infinite@0.2.6':
-    resolution: {integrity: sha512-Fugqk7dux5Kcjh0LnKzuHmt9ROY9DOGKJkk0O63e4FfpNoZkZlRk/aJnrGV4Ao2MWDBN2RkT3xKNRShO+hJESw==}
-
-  '@ikun-ui/input-number@0.2.6':
-    resolution: {integrity: sha512-LOQw8+IgfnDAxyzttJhOEi2gtxGIU9h1sszfojt6YbyN1vQFtx1nRmGB0SQpjGA64r7UOz8r7lXaVKPsvJOjYw==}
-
-  '@ikun-ui/input@0.2.6':
-    resolution: {integrity: sha512-ya/0ngrq+FCAxAjqnDKv8quONgGdm9aK4s5L7BlwEj6PfHU5hNRgiLwzmGqidpGeiG6dthqcXEFq5aeuQWZ93w==}
-
-  '@ikun-ui/layout@0.2.6':
-    resolution: {integrity: sha512-LTruKG4DswdVnwBdnOEHdrv7+3SBFxgkemSEn/bWvkhI18RtFXMOzX7ryWDcAZe5WXf9f+E/hQVT/uU5FtWE0Q==}
-
-  '@ikun-ui/link@0.2.6':
-    resolution: {integrity: sha512-AM8TsJSDVqnAE7/GlvsTyOPnngzo+hk6WAP5ACV9XD50LhjlMSeIWJde47xrIAIL0xK465Vjhy4LCRt74/oXiw==}
-
-  '@ikun-ui/mask@0.2.6':
-    resolution: {integrity: sha512-PDGeCWCdtnPlY6PvKoUagN0hY7P2hJJXvd5UkwkJD0NlgpI+3POo5hLz8+DMeYEaHCntrH5FEZ4HI630OrNeFg==}
-
-  '@ikun-ui/message-box@0.2.6':
-    resolution: {integrity: sha512-6x+YatvYebcrK8a90+xsrtbrCbVbY/Mug0VeBtOym4s4rHdAUg3OAgtAqTMYSW8ocd+ozTXpl4lBZ6x7OWx3sw==}
-
-  '@ikun-ui/message@0.2.6':
-    resolution: {integrity: sha512-EkQI5cR/rn9z1xAj7rA9vaXS9vUOXoprASyPG0SCnYFDZe6MDWCV/c+fWbB1Z6gzQmuUez67qxKzI4XUyyD3LQ==}
-
-  '@ikun-ui/modal@0.2.6':
-    resolution: {integrity: sha512-EWnSTpSEF0IPrJ0ZgNW8fhruJw/4SDMD2tdsXoD4XkZfghcAJICBpvW6pFgcJT2VppJxIGh7M13sYhogxSHrCg==}
-
-  '@ikun-ui/notify@0.2.6':
-    resolution: {integrity: sha512-5oii7HEdkbPdxjdASbi9hbdIwsDi+X+HhwL9XlDPljPdtiZgD9UrdGc11dVyNntkiAsmdhtMUdNkQr4eStT7lw==}
-
-  '@ikun-ui/page-header@0.2.6':
-    resolution: {integrity: sha512-8WK0YE3ugzB0uAH1nwP9vTo8bko2th+WY+nOOF76MvJeOOd2Lx5pbRbYyyxBlr/BNfxg+cLYL9jmWpNlSUWUTQ==}
-
-  '@ikun-ui/pagination@0.2.6':
-    resolution: {integrity: sha512-WEjRMUXWiYByBJTgqSCYJFGzfMtGBnlgeLWoIkmOWFdAkNAYAC+oIU7rqBwaKPQhr+F3rbY5+hjoe+v4REn19Q==}
-
-  '@ikun-ui/popconfirm@0.2.6':
-    resolution: {integrity: sha512-ADCK+jWZbocGdrZAAC6a8zmCP7ewra8iOgNOIbvU9ZPmjnkUKMzVvSL0M5+Ii5pz2OuV1Jadx0B8Ktw02Y2Aqg==}
-
-  '@ikun-ui/popover@0.2.6':
-    resolution: {integrity: sha512-Ri5IRSzKZbXAWdEdSlE5icD56yq1FUp6iTXmCGRMHjiAWjfIpDHU/ekVPn39dTsBNzJ9wHeCYbNH8fQ+Ej2dJQ==}
-
-  '@ikun-ui/preset@0.2.6':
-    resolution: {integrity: sha512-z9gO/TWr8y23j+xH38nE1NaVs8377k/Lr66MCwYTP4GH5rixHTUeM1vNvNpKIlEjk+RmTMKTweOnNUn1pJZJaw==}
-
-  '@ikun-ui/progress@0.2.6':
-    resolution: {integrity: sha512-1vQ1QKPMFbgvm76issCRS5J1idng6ANykWnahK2F6lfCTsnm0fRCOUZ0S0PGq2xMW6Ck59B3P8zfr7/6uPclyQ==}
-
-  '@ikun-ui/radio-group@0.2.6':
-    resolution: {integrity: sha512-qgeQbSLGAhdhGlNrSiXlnMV0TTV28fLEwajIRIsvrxzXPZWd/aZubDCgUkHdJJ1BZLI/YMOtAhFjTZ7WKGLsFg==}
-
-  '@ikun-ui/radio@0.2.6':
-    resolution: {integrity: sha512-ttuNVjZmKhTpk68MkbNnGKRkR6lpcYWDN7jS9PnWuTpA5H6dpnbpt1AUO1pP6uh2Jq9jYOAAxhvxyN8e8PTkuw==}
-
-  '@ikun-ui/rate@0.2.6':
-    resolution: {integrity: sha512-c1mlGeeWJDmfrOjVoZySKpmnJEPagVgSxIdbCKVm+oXNI0ZXvrEzeey7KNYnoHxGY4jy09IScHageBL/6YtOzw==}
-
-  '@ikun-ui/scrollbar@0.2.6':
-    resolution: {integrity: sha512-8DYKwqC9+AXmNfdx0VM7qWc8yP4eZ5Kh6tq5UcOemCofgiXJMBq08tZOhLXaCNCsF4WYA9rEjavaLZMIg4Bs3w==}
-
-  '@ikun-ui/segmented@0.2.6':
-    resolution: {integrity: sha512-Eslthh9h9B5X7FUEMRCxebl+USaTqfmnpKZW/nL/ho2Y8M7mD73XxN7jkriJ+A3FOqohfkW49dUcQWGN7nv65w==}
-
-  '@ikun-ui/select@0.2.6':
-    resolution: {integrity: sha512-mp5oRafsQhceuOcM4MLdzykcDfsfzHsVyTQ9g2RXFBNjf/v/i67Pc6nNs6VSjKrvj6bjzjRro5M4BlQncL004w==}
-
-  '@ikun-ui/skeleton@0.2.6':
-    resolution: {integrity: sha512-FkXbXjdx2lVOLSQO1OxfxoJyCIUj0NgTnKyC3CCSDtokJrOjokEcd0yO0mJxdA4e83SJ+MlUl0ZiI5fGKrMt/w==}
-
-  '@ikun-ui/slider@0.2.6':
-    resolution: {integrity: sha512-i9ulV5kbhtDwl8sgcdzNVqIOqXIeETS/ta5X69GieQcVi3JXg+AP1Q0gcwWKID4+lDLmHmPXTpfEOibct+Dscw==}
-
-  '@ikun-ui/spin@0.2.6':
-    resolution: {integrity: sha512-g42wx1z0zhnelxJ7KHVs4piTeJfsYnboQLSrzZDFDEB6g2cOKEPA4kSZXPWghkDoyumhmPhXbD7O5RQ/bPYZJw==}
-
-  '@ikun-ui/statistic@0.2.6':
-    resolution: {integrity: sha512-UJpgeQWTbeeyrDjeDClPMrzlvRXkJqwC5/sctYQAzNRquOKUOIgHVgOhEu7mTVYsM0x9cqKXHR7DoUGm9uietQ==}
-
-  '@ikun-ui/steps@0.2.6':
-    resolution: {integrity: sha512-6pw5lkNWWPQwKgoz6B+PgRidZL/mwg3qPo04cIsbaYlq4UbwS7rcmzUSUIxTOQbEETE12EmGGJ70jUQpP2FPYA==}
-
-  '@ikun-ui/switch@0.2.6':
-    resolution: {integrity: sha512-aXZz36efwLVcXEfe63flrJ6J/uciQ/ROcOnyX1IcDNTBWPuZHzOqClmOIfypeCHZmckzpEcYbsYGjtc/diqlow==}
-
-  '@ikun-ui/tabs@0.2.6':
-    resolution: {integrity: sha512-GNCDz6a7sPMFY5qq4nRBNZsHeMH8QOmTg2Toq5H1eiPb+RFf3XHZfzSeNtiYH8fIwI0VkCnMytA8T9/B9MEZVg==}
-
-  '@ikun-ui/tag@0.2.6':
-    resolution: {integrity: sha512-a02j3pMp0SIdOPsLF+Vx2nh5xanj0wqr2ENuvd7arDbsrW/WvxRApOeYlB2cCLot4UwDiduiiXSHMrkwvvntVw==}
-
-  '@ikun-ui/timeline@0.2.6':
-    resolution: {integrity: sha512-mOXzdyNXwpCg55hsuhR0cJgvouwpkEgV+AToUCcLwrQhQz1tdRuDd/5dFs1a7cychX1SQxXfTqHOoREpsFRJTA==}
-
-  '@ikun-ui/tooltip@0.2.6':
-    resolution: {integrity: sha512-WuF7DK0X4IOpg2qwLip8azBQmUky2+o0OTSRm+QeuZeUAC1PuIn/nd6Rj9GbA9Sa40v3UsH9mvgBznY3IbDDbw==}
-
-  '@ikun-ui/tour@0.2.6':
-    resolution: {integrity: sha512-gAD+IlLZfDTIn31bM8cPGq6lOJVCyEbK6BZ9SUg2VpLIUdWRl6o8ShNkI/VpQj3fs9NcNXENCdTLPNPgzaudew==}
-
-  '@ikun-ui/utils@0.2.6':
-    resolution: {integrity: sha512-ANz/Gi6N7kRSMSIf7INxhcNaCyASw/O8s/3YGJ5FmZzPyaVEm9/WNEvCk/uOy+eJQBc+tCxUBzjduXeBCtSQqw==}
-
-  '@ikun-ui/virtual-list@0.2.6':
-    resolution: {integrity: sha512-KO2J4Oc7zyZ5expQIRGUwI/0n1ZcT1Z8sevUWY8ppjcffpON+OpGd30Aa4B0XnibU55KXn7Etc5L9Y297I/cQg==}
-
-  '@ikun-ui/watermark@0.2.6':
-    resolution: {integrity: sha512-Ihee9FY5tsiVbFT7/gGlQ8yMU2T7KlqxlvTvOVxHFilVB1HWF1/HWIMTtZYki+1MqDjs9sIeyRSTbYdH51c6mw==}
-
   '@jest/schemas@29.6.3':
     resolution: {integrity: sha512-mo5j5X+jIZmJQveBKeS/clAueipV7KgiX1vMgCxam1RNYiqE1w62n0/tJJnHtjW8ZHcQco5gY85jA3mi0L+nSA==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
@@ -838,26 +573,12 @@ packages:
   '@one-ini/wasm@0.1.1':
     resolution: {integrity: sha512-XuySG1E38YScSJoMlqovLru4KTUNSjgVTIjyh7qMX6aNN5HY5Ct5LhRJdxO79JtTzKfzV/bnWpz+zquYrISsvw==}
 
-  '@onu-ui/components@1.0.14-beta.2':
-    resolution: {integrity: sha512-kFCJEshxJjNs2NvfONlDfVOIOgKbX2hGNUXDs1lORQRlP110ZgJKZCI+9qLNHIPSWS+ifWL1gLwjWSpyp4/jTQ==}
-
-  '@onu-ui/preset@1.0.14-beta.2':
-    resolution: {integrity: sha512-DxyN7+/hqoJuDv64TT+I1XII0QoCO/4wQoZsKeqgld7JGKv1ti3UlipXVhPWTDZE9g1ETyZPJW4oPgDX7z/a4A==}
-
-  '@onu-ui/utils@1.0.14-beta.2':
-    resolution: {integrity: sha512-Ddu1TWt32y6oDngv7o6MUjclV9GHKJeOS26GzClQYi14UKBxNJOLIo3fhG9J/R7omRNZH9QOY81myrPeHLoU4w==}
-    peerDependencies:
-      vue: ^3.2.0
-
   '@pkgr/core@0.1.1':
     resolution: {integrity: sha512-cq8o4cWH0ibXh9VGi5P20Tu9XF/0fFXl9EUinr9QfTM7a7p0oTA4iJRCQWppXR1Pg8dSM0UCItCkPwsk9qWWYA==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
 
   '@polka/url@1.0.0-next.24':
     resolution: {integrity: sha512-2LuNTFBIO0m7kKIQvvPHN6UE63VjpmL9rnEEaOOaiSPbZK+zUOYIzBAWcED+3XYzhYsd/0mD57VdxAEqqV52CQ==}
-
-  '@popperjs/core@2.11.8':
-    resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==}
 
   '@rollup/pluginutils@5.1.0':
     resolution: {integrity: sha512-XTIWOPPcpvyKI6L1NHo0lFlCyznUEyPmPY1mc3KpPVDYulHSTvyeLNVW00QTLIAFNhR3kYnJTQHeGqU4M3n09g==}
@@ -980,13 +701,6 @@ packages:
     peerDependencies:
       eslint: '>=8.40.0'
 
-  '@sveltejs/package@2.3.1':
-    resolution: {integrity: sha512-JvR2J4ost1oCn1CSdqenYRwGX/1RX+7LN+VZ71aPnz3JAlIFaEKQd1pBxlb+OSQTfeugJO0W39gB9voAbBO5ow==}
-    engines: {node: ^16.14 || >=18}
-    hasBin: true
-    peerDependencies:
-      svelte: ^3.44.0 || ^4.0.0 || ^5.0.0-next.1
-
   '@types/eslint@8.56.9':
     resolution: {integrity: sha512-W4W3KcqzjJ0sHg2vAq9vfml6OhsJ53TcUjUqfzzZf/EChUtwspszj/S0pzMxnfRcO55/iGq47dscXw71Fxc4Zg==}
 
@@ -1010,9 +724,6 @@ packages:
 
   '@types/unist@2.0.9':
     resolution: {integrity: sha512-zC0iXxAv1C1ERURduJueYzkzZ2zaGyc+P2c95hgkikHPr3z8EdUZOlgEQ5X0DRmwDZn+hekycQnoeiiRVrmilQ==}
-
-  '@types/web-bluetooth@0.0.16':
-    resolution: {integrity: sha512-oh8q2Zc32S6gd/j50GowEjKLoOVOwHP/bWVjKJInBwQqdOYMdPrf1oVlelTlyfFK3CKxL1uahMDAr+vy8T7yMQ==}
 
   '@types/web-bluetooth@0.0.20':
     resolution: {integrity: sha512-g9gZnnXVq7gM7v3tJCWV/qw7w+KeOlSHAhgF9RytFyifW6AF61hdT2ucrYhPq9hLs5JIryeupHV3qGk95dH9ow==}
@@ -1410,9 +1121,6 @@ packages:
   '@vue/compiler-ssr@3.4.23':
     resolution: {integrity: sha512-hb6Uj2cYs+tfqz71Wj6h3E5t6OKvb4MVcM2Nl5i/z1nv1gjEhw+zYaNOV+Xwn+SSN/VZM0DgANw5TuJfxfezPg==}
 
-  '@vue/devtools-api@6.5.1':
-    resolution: {integrity: sha512-+KpckaAQyfbvshdDW5xQylLni1asvNSGme1JFs8I1+/H5pHEhqUKMEQD/qn3Nx5+/nycBq11qAEi8lk+LXI2dA==}
-
   '@vue/devtools-core@7.1.3':
     resolution: {integrity: sha512-pVbWi8pf2Z/fZPioYOIgu+cv9pQG55k4D8bL31ec+Wfe+pQR0ImFDu0OhHfch1Ra8uvLLrAZTF4IKeGAkmzD4A==}
 
@@ -1463,20 +1171,11 @@ packages:
   '@vueuse/core@10.9.0':
     resolution: {integrity: sha512-/1vjTol8SXnx6xewDEKfS0Ra//ncg4Hb0DaZiwKf7drgfMsKFExQ+FnnENcN6efPen+1kIzhLQoGSy0eDUVOMg==}
 
-  '@vueuse/core@9.13.0':
-    resolution: {integrity: sha512-pujnclbeHWxxPRqXWmdkKV5OX4Wk4YeK7wusHqRwU0Q7EFusHoqNA/aPhB6KCh9hEqJkLAJo7bb0Lh9b+OIVzw==}
-
   '@vueuse/metadata@10.9.0':
     resolution: {integrity: sha512-iddNbg3yZM0X7qFY2sAotomgdHK7YJ6sKUvQqbvwnf7TmaVPxS4EJydcNsVejNdS8iWCtDk+fYXr7E32nyTnGA==}
 
-  '@vueuse/metadata@9.13.0':
-    resolution: {integrity: sha512-gdU7TKNAUVlXXLbaF+ZCfte8BjRJQWPCa2J55+7/h+yDtzw3vOoGQDRXzI6pyKyo6bXFT5/QoPE4hAknExjRLQ==}
-
   '@vueuse/shared@10.9.0':
     resolution: {integrity: sha512-Uud2IWncmAfJvRaFYzv5OHDli+FbOzxiVEQdLCKQKLyhz94PIyFC3CHcH7EDMwIn8NPtD06+PNbC/PiO0LGLtw==}
-
-  '@vueuse/shared@9.13.0':
-    resolution: {integrity: sha512-UrnhU+Cnufu4S6JLCPZnkWh0WwZGUp72ktOF2DFptMlOs3TOdVv8xJN53zhHGARmVOsz5KqOls09+J1NR6sBKw==}
 
   abbrev@1.1.1:
     resolution: {integrity: sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==}
@@ -1501,10 +1200,6 @@ packages:
 
   ajv@6.12.6:
     resolution: {integrity: sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==}
-
-  ansi-colors@4.1.3:
-    resolution: {integrity: sha512-/6w/C21Pm1A7aZitlI5Ni/2J6FFQN8i1Cvz3kHABAAbw93v/NlvKdVOqz7CCWz/3iv/JplRSEEZ83XION15ovw==}
-    engines: {node: '>=6'}
 
   ansi-escapes@6.2.0:
     resolution: {integrity: sha512-kzRaCqXnpzWs+3z5ABPQiVke+iq0KXkHo8xiWV4RPTi5Yli0l97BEQuhXV1s7+aSU/fu1kUuxgS4MsQ0fRuygw==}
@@ -1571,9 +1266,6 @@ packages:
 
   axobject-query@4.0.0:
     resolution: {integrity: sha512-+60uv1hiVFhHZeO+Lz0RYzsVHy5Wr1ayX0mwda9KPDVLNJgZ1T9Ny7VmFbLDzxsH0D87I86vgj3gFrjTJUYznw==}
-
-  baiwusanyu-utils@1.0.18:
-    resolution: {integrity: sha512-wOBdqD2brZwNWkX9IKEWTEXQWh+a5UCpQxQXlu+abSL6MnalMBMwJf1tqGF49hfFT+RzVnWXWirhNNycGGZ0fQ==}
 
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
@@ -1679,10 +1371,6 @@ packages:
     resolution: {integrity: sha512-BSeNnyus75C4//NQ9gQt1/csTXyo/8Sb+afLAkzAptFuMsod9HFokGNudZpi/oQV73hnVK+sR+5PVRMd+Dr7YQ==}
     engines: {node: '>=12'}
 
-  clsx@2.1.1:
-    resolution: {integrity: sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==}
-    engines: {node: '>=6'}
-
   code-red@1.0.4:
     resolution: {integrity: sha512-7qJWqItLA8/VPVlKJlFXU+NBlo/qyfs39aJcuMT/2ere32ZqvF5OSxgdM5xOfJJ7O429gg2HM47y8v9P+9wrNw==}
 
@@ -1761,9 +1449,6 @@ packages:
     resolution: {integrity: sha512-ZYP5VBHshaDAiVZxjbRVcFJpc+4xGgT0bK3vzy1HLN8jTO975HEbuYzZJcHoQEY5K1a0z8YayJkyVETa08eNTg==}
     engines: {node: '>=18'}
 
-  dayjs@1.11.11:
-    resolution: {integrity: sha512-okzr3f11N6WuqYtZSvm+F776mB41wRZMhKP+hc34YdW+KmtYYK9iqvHSwo2k9FEH3fhGXvOPV6yz2IcSrfRUDg==}
-
   de-indent@1.0.2:
     resolution: {integrity: sha512-e/1zu3xH5MQryN2zdVaF0OrdNLUbvWxzMbi+iNA6Bky7l1RoP8a2fIbRocyHclXt/arDrrR6lL3TqFD9pMQTsg==}
 
@@ -1786,9 +1471,6 @@ packages:
 
   decimal.js@10.4.3:
     resolution: {integrity: sha512-VBBaLc1MgL5XpzgIP7ny5Z6Nx3UrRkIViUkPUdtl9aya5amy3De1gsUUSB1g3+3sExYNjCAsAznmukyxCb1GRA==}
-
-  dedent-js@1.0.1:
-    resolution: {integrity: sha512-OUepMozQULMLUmhxS95Vudo0jb0UchLimi3+pQ2plj61Fcy8axbP9hbiD4Sz6DPqn6XG3kfmziVfQ1rSys5AJQ==}
 
   deep-eql@4.1.3:
     resolution: {integrity: sha512-WaEtAOpRA1MQ0eohqZjpGD8zdI0Ovsm8mmFhaDN8dvDZzyoUMcYDnf5Y6iu7HTXxf8JDS23qWa4a+hKCDyOPzw==}
@@ -2081,9 +1763,6 @@ packages:
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     hasBin: true
 
-  esm-env@1.0.0:
-    resolution: {integrity: sha512-Cf6VksWPsTuW01vU9Mk/3vRue91Zevka5SjyNf3nEpokFRuqt/KjUQoGAwq9qMmhpLTHmXzSIrFRw8zxWzmFBA==}
-
   espree@10.0.1:
     resolution: {integrity: sha512-MWkrWZbJsL2UwnjxTX3gG8FneachS/Mwg7tdGXce011sJd5b0JG54vat5KHnfSBODZ3Wvzd2WnjxyzsRoVv+ww==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
@@ -2274,9 +1953,6 @@ packages:
   has-flag@4.0.0:
     resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==}
     engines: {node: '>=8'}
-
-  hash-sum@2.0.0:
-    resolution: {integrity: sha512-WdZTbAByD+pHfl/g9QSsBIIwy8IT+EsPiKDs0KNX+zSHhdDLFKdZu0BQHljvO+0QI/BasbMSUa8wYNCZTvhslg==}
 
   hasown@2.0.0:
     resolution: {integrity: sha512-vUptKVTpIJhcczKBbgnS+RtcuYMB8+oNzPK2/Hp3hanz8JmpATdmmgLgSaadVREkDm+e2giHwY3ZRkyjSIDDFA==}
@@ -2510,10 +2186,6 @@ packages:
     resolution: {integrity: sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==}
     engines: {node: '>=6'}
 
-  kleur@4.1.5:
-    resolution: {integrity: sha512-o+NO+8WrRiQEE4/7nwRJhN1HWpVmJm511pBHUxPLtp0BUISzlBplORYSmTclCnJvQq2tKu/sgl3xVpkc7ZWuQQ==}
-    engines: {node: '>=6'}
-
   kolorist@1.8.0:
     resolution: {integrity: sha512-Y+60/zizpJ3HRH8DCss+q95yr6145JXZo46OTpFvDZWLfRCE4qChOyk1b26nMaNpfHHgxagk9dXT5OP0Tfe+dQ==}
 
@@ -2572,9 +2244,6 @@ packages:
 
   loupe@2.3.7:
     resolution: {integrity: sha512-zSMINGVYkdpYSOBmLi0D1Uo7JU9nVdQKrHxC8eYlV+9YKK9WePqAlL7lSlorG/U2Fw1w0hTBmaa/jrQ3UbPHtA==}
-
-  lower-case@2.0.2:
-    resolution: {integrity: sha512-7fm3l3NAF9WfN6W3JOmf5drwpVqX78JtoGJ3A6W0a6ZnldM41w2fV5D490psKFTpMds8TJse/eHLFFsNHHjHgg==}
 
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
@@ -2658,13 +2327,6 @@ packages:
   mlly@1.6.1:
     resolution: {integrity: sha512-vLgaHvaeunuOXHSmEbZ9izxPx3USsk8KCQ8iC+aTlp5sKRSoZvwhHh5L9VbKSaVC6sJDqbyohIS76E2VmHIPAA==}
 
-  moment@2.30.1:
-    resolution: {integrity: sha512-uEmtNhbDOrWPFS+hdjFCBfy9f2YoyzRpwcl+DqpC6taX21FzsTLQVbMV/W7PzNSX6x/bhC1zA3c2UQ5NzH6how==}
-
-  mri@1.2.0:
-    resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
-    engines: {node: '>=4'}
-
   mrmime@2.0.0:
     resolution: {integrity: sha512-eu38+hdgojoyq63s+yTpN4XMBdt5l8HhMhc4VKLO9KM5caLIBvUm4thi7fFaxyTmCKeNnXZ5pAlBwCUnhA09uw==}
     engines: {node: '>=10'}
@@ -2691,9 +2353,6 @@ packages:
 
   natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
-
-  no-case@3.0.4:
-    resolution: {integrity: sha512-fgAN3jGAh+RoxUGZHTSOLJIqUc2wmoBwGR4tbpNAKmmovFoWq0OdRkb0VkldReO2a2iBT/OEulG9XSUc10r3zg==}
 
   node-fetch-native@1.6.4:
     resolution: {integrity: sha512-IhOigYzAKHd244OC0JIMIUrjzctirCmPkaIfhDeGcEETWof5zKYUW7e7MYvChGWh/4CJeXEgsRyGzuF334rOOQ==}
@@ -2740,9 +2399,6 @@ packages:
   onetime@6.0.0:
     resolution: {integrity: sha512-1FlR+gjXK7X+AsAHso35MnyN5KqGwJRi/31ft6x0M194ht7S+rWAvd7PHss9xSKMzE0asv1pyIHaJYq+BbacAQ==}
     engines: {node: '>=12'}
-
-  onu-ui@1.0.14-beta.2:
-    resolution: {integrity: sha512-BfpznGkVkhXzCHNLsXugPbRJeUFThHd89cX5vqqLOy0YJ9dW96gRiXObfd24KZ3zzawlNbmoYB3nLTkt2EpZ2Q==}
 
   open@10.1.0:
     resolution: {integrity: sha512-mnkeQ1qP5Ue2wd+aivTD3NHd/lZ96Lu0jgf0pwktLPtx6cTZiH7tyeGRRHs0zX0rbrahXPnXlUnbeXyaBBuIaw==}
@@ -2801,9 +2457,6 @@ packages:
 
   parse5@7.1.2:
     resolution: {integrity: sha512-Czj1WaSVpaoj0wbhMzLmWD69anp2WH7FXMB9n1Sy8/ZFF9jolSQVMu1Ij5WIyGmcBmhk7EOndpO4mIpihVqAXw==}
-
-  pascal-case@3.1.2:
-    resolution: {integrity: sha512-uWlGT3YSnK9x3BQJaOdcZwrnV6hPpd8jFH1/ucpiLRPh/2zCVJKS19E4GvYHvaCcACn3foXZ0cLB9Wrx1KGe5g==}
 
   path-browserify@1.0.1:
     resolution: {integrity: sha512-b7uo2UCUOYZcnF/3ID0lulOJi/bafxa1xPe7ZPsammBSpjSWQkjNxlt635YGS2MiR9GjvuXCtz2emr3jbsz98g==}
@@ -2993,10 +2646,6 @@ packages:
   run-parallel@1.2.0:
     resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
 
-  sade@1.8.1:
-    resolution: {integrity: sha512-xal3CZX1Xlo/k4ApwCFrHVACi9fBqJ7V+mwhBsuf/1IOKbBy098Fex+Wa/5QMubw09pSZ/u8EY8PWgevJsXp1A==}
-    engines: {node: '>=6'}
-
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
@@ -3060,9 +2709,6 @@ packages:
   slice-ansi@7.1.0:
     resolution: {integrity: sha512-bSiSngZ/jWeX93BqeIAbImyTbEihizcwNjFoRUIY/T1wWQsfsm2Vw1agPKylXvQTU7iASGdHhyqRlqQzfz+Htg==}
     engines: {node: '>=18'}
-
-  smoke-distance@1.0.3:
-    resolution: {integrity: sha512-wup6+TpdGHNDjxmqrS1zh514iV/Tof51lvKe9hwJxvCJTLKUNYYVFaOqnT5j/Y8PJYewxLfzX1m6kKvnqxefaA==}
 
   source-map-js@1.2.0:
     resolution: {integrity: sha512-itJW8lvSA0TXEphiRoawsCksnlf8SyvmFzIhltqAHluXd88pkCd+cXJVHTDwdCr0IzwptSm035IHQktUu1QUMg==}
@@ -3147,21 +2793,6 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  svelte-infinite-scroll@2.0.1:
-    resolution: {integrity: sha512-goTHCfOHRDCs8C5MeSuIc6LlAQ8zVQ+M4Y3LyvrDjx5rqSSxSrdCuQwIyWYNcO6j6/mnqRro3QB64ClBzfn+Wg==}
-
-  svelte-popperjs@1.3.2:
-    resolution: {integrity: sha512-fwrErlkvngL876WXRnL3OLlfk/n9YkZwwLxuKRpZOYCJLt1zrwhoKTXS+/sRgDveD/zd6GQ35hV89EOip+NBGA==}
-    peerDependencies:
-      '@popperjs/core': '>=2'
-      svelte: '>=3'
-
-  svelte2tsx@0.7.8:
-    resolution: {integrity: sha512-ABK3RDFcy59AqAiU1N5Kxu1RnKrb1GDMrQjLgNgJfE8Q+coCKpjCAPtUVKQM2HnmuqeNWcT3NqfXbE+ZmN5Pow==}
-    peerDependencies:
-      svelte: ^3.55 || ^4.0.0-next.0 || ^4.0 || ^5.0.0-next.0
-      typescript: ^4.9.4 || ^5.0.0
-
   svelte@4.2.15:
     resolution: {integrity: sha512-j9KJSccHgLeRERPlhMKrCXpk2TqL2m5Z+k+OBTQhZOhIdCCd3WfqV+ylPWeipEwq17P/ekiSFWwrVQv93i3bsg==}
     engines: {node: '>=16'}
@@ -3193,9 +2824,6 @@ packages:
 
   tinybench@2.5.1:
     resolution: {integrity: sha512-65NKvSuAVDP/n4CqH+a9w2kTlLReS9vhsAP06MWx+/89nMinJyB2icyl58RIcqCmIggpojIGeuJGhjU1aGMBSg==}
-
-  tinycolor2@1.6.0:
-    resolution: {integrity: sha512-XPaBkWQJdsf3pLKJV9p4qN/S+fm2Oj8AIPo1BTUhg5oxkvm9+SVEGFdhyOz7tTdUTfvxMiAs4sp6/eZO2Ew+pw==}
 
   tinypool@0.8.4:
     resolution: {integrity: sha512-i11VH5gS6IFeLY3gMBQ00/MmLncVP7JLXOw1vlgkytLmJK7QnEr7NXf0LBdxfmNPAeyetukOk0bOYrJrFGjYJQ==}
@@ -3359,14 +2987,6 @@ packages:
     peerDependencies:
       vue: ^2.7.0 || ^3.2.25
 
-  unplugin-vue-router@0.8.6:
-    resolution: {integrity: sha512-yd7A4qIT2ZvCELchL32qVueFXx8BE9zD0UEzWJjHAlVy2Xb2luPkNJG6uCAeqdObCS1lSKTOFAFmQXAxdchqTw==}
-    peerDependencies:
-      vue-router: ^4.3.0
-    peerDependenciesMeta:
-      vue-router:
-        optional: true
-
   unplugin@1.10.1:
     resolution: {integrity: sha512-d6Mhq8RJeGA8UfKCu54Um4lFA0eSaRa3XxdAJg8tIdxbu1ubW0hBCZUL7yI2uGyYCRndvbK8FLHzqy2XKfeMsg==}
     engines: {node: '>=14.0.0'}
@@ -3492,11 +3112,6 @@ packages:
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: '>=6.0.0'
-
-  vue-router@4.3.2:
-    resolution: {integrity: sha512-hKQJ1vDAZ5LVkKEnHhmm1f9pMiWIBNGF5AwU67PdH7TyXCj/a4hTccuUuYCAMgJK6rO/NVYtQIEN3yL8CECa7Q==}
-    peerDependencies:
-      vue: ^3.2.0
 
   vue-template-compiler@2.7.15:
     resolution: {integrity: sha512-yQxjxMptBL7UAog00O8sANud99C6wJF+7kgbcwqkvA38vCGF7HWE66w0ZFnS/kX5gSoJr/PQ4/oS3Ne2pW37Og==}
@@ -3913,28 +3528,6 @@ snapshots:
       '@babel/helper-validator-identifier': 7.22.20
       to-fast-properties: 2.0.0
 
-  '@baiwusanyu/utils-com@1.0.18(ansi-colors@4.1.3)(hash-sum@2.0.0)':
-    dependencies:
-      ansi-colors: 4.1.3
-      hash-sum: 2.0.0
-
-  '@baiwusanyu/utils-date@1.0.18(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      ansi-colors: 4.1.3
-      moment: 2.30.1
-
-  '@baiwusanyu/utils-is@1.0.18': {}
-
-  '@baiwusanyu/utils-log@1.0.18(ansi-colors@4.1.3)':
-    dependencies:
-      ansi-colors: 4.1.3
-
-  '@baiwusanyu/utils-normalize@1.0.18': {}
-
-  '@baiwusanyu/utils-obj@1.0.18': {}
-
-  '@baiwusanyu/utils-task@1.0.18': {}
-
   '@clack/core@0.3.4':
     dependencies:
       picocolors: 1.0.0
@@ -4094,936 +3687,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@ikun-ui/affix@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/alert@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/auto-complete@0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/input': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/popover': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      '@ikun-ui/virtual-list': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - '@popperjs/core'
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/avatar@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/backtop@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      smoke-distance: 1.0.3
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/badge@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/breadcrumb-item@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/breadcrumb@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/button-group@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/button@0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/dropdown': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/form': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - '@popperjs/core'
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/calendar@0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/button': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/button-group': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/select': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      dayjs: 1.11.11
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - '@popperjs/core'
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/card@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/carousel@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/indicators': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/checkbox-group@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/form': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/checkbox@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/checkbox-group': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/form': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/client-only@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      esm-env: 1.0.0
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/collapse-wrapper@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/collapse@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)(typescript@5.4.5)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      '@sveltejs/package': 2.3.1(svelte@4.2.15)(typescript@5.4.5)
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-      - typescript
-
-  '@ikun-ui/color-picker@0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/checkbox': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/checkbox-group': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/dropdown': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/form': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/input': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/input-number': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/popover': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      esm-env: 1.0.0
-      svelte: 4.2.15
-      tinycolor2: 1.6.0
-    transitivePeerDependencies:
-      - '@popperjs/core'
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/contextmenu@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/core@0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))(moment@2.30.1)(svelte@4.2.15)(typescript@5.4.5)(unocss@0.59.4(postcss@8.4.38)(rollup@4.14.3)(vite@5.2.9(@types/node@20.12.7)))':
-    dependencies:
-      '@ikun-ui/affix': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/alert': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/auto-complete': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/avatar': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/backtop': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/badge': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/breadcrumb': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/breadcrumb-item': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/button': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/button-group': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/calendar': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/card': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/carousel': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/checkbox': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/checkbox-group': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/client-only': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/collapse': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)(typescript@5.4.5)
-      '@ikun-ui/collapse-wrapper': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/color-picker': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/contextmenu': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/countdown': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/descriptions': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/descriptions-item': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/divider': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/drawer': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/dropdown': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/ellipsis': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/empty': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/eye-dropper': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/flex': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/form': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/grid': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/image': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/image-view': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/indicators': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/infinite': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/input': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/input-number': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/layout': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/link': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/mask': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/message': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/message-box': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/modal': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/notify': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/page-header': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/pagination': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/popconfirm': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/popover': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/preset': 0.2.6
-      '@ikun-ui/progress': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/radio': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/radio-group': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/rate': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/scrollbar': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/segmented': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/select': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/skeleton': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/slider': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/spin': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/statistic': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/steps': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/switch': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/tabs': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/tag': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/timeline': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/tooltip': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/tour': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      '@ikun-ui/virtual-list': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/watermark': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      dayjs: 1.11.11
-      svelte: 4.2.15
-      unocss: 0.59.4(postcss@8.4.38)(rollup@4.14.3)(vite@5.2.9(@types/node@20.12.7))
-    transitivePeerDependencies:
-      - '@popperjs/core'
-      - ansi-colors
-      - moment
-      - typescript
-
-  '@ikun-ui/countdown@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/statistic': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      dayjs: 1.11.11
-      esm-env: 1.0.0
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/descriptions-item@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/descriptions': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/descriptions@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/divider@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/drawer@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/client-only': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/mask': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/dropdown@0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/popover': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/scrollbar': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - '@popperjs/core'
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/ellipsis@0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/tooltip': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - '@popperjs/core'
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/empty@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/eye-dropper@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/flex@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/form@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/grid@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/icon@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/image-view@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/client-only': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/mask': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/image@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/image-view': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      esm-env: 1.0.0
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/indicators@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/infinite@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-      svelte-infinite-scroll: 2.0.1
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/input-number@0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/button': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/form': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      decimal.js: 10.4.3
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - '@popperjs/core'
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/input@0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/button': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/form': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - '@popperjs/core'
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/layout@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/link@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/mask@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/message-box@0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/button': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/form': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/input': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/modal': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - '@popperjs/core'
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/message@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/notify': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/modal@0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/button': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/client-only': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/mask': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - '@popperjs/core'
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/notify@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/page-header@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/divider': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/pagination@0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/input': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/select': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - '@popperjs/core'
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/popconfirm@0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/popover': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - '@popperjs/core'
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/popover@0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      svelte: 4.2.15
-      svelte-popperjs: 1.3.2(@popperjs/core@2.11.8)(svelte@4.2.15)
-    transitivePeerDependencies:
-      - '@popperjs/core'
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/preset@0.2.6': {}
-
-  '@ikun-ui/progress@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/radio-group@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/form': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/radio@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/form': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/radio-group': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/rate@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/form': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/scrollbar@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/segmented@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/select@0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/form': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/popover': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      '@ikun-ui/virtual-list': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - '@popperjs/core'
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/skeleton@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/slider@0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/form': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/tooltip': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - '@popperjs/core'
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/spin@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/client-only': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/mask': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/statistic@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/steps@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/switch@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/form': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/tabs@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      esm-env: 1.0.0
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/tag@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/timeline@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/tooltip@0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/popover': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - '@popperjs/core'
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/tour@0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/button': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/indicators': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/popover': 0.2.6(@popperjs/core@2.11.8)(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      esm-env: 1.0.0
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - '@popperjs/core'
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/utils@0.2.6':
-    dependencies:
-      esm-env: 1.0.0
-
-  '@ikun-ui/virtual-list@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/scrollbar': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
-  '@ikun-ui/watermark@0.2.6(ansi-colors@4.1.3)(moment@2.30.1)':
-    dependencies:
-      '@ikun-ui/icon': 0.2.6(ansi-colors@4.1.3)(moment@2.30.1)
-      '@ikun-ui/utils': 0.2.6
-      baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      clsx: 2.1.1
-      svelte: 4.2.15
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
-
   '@jest/schemas@29.6.3':
     dependencies:
       '@sinclair/typebox': 0.27.8
@@ -5059,26 +3722,9 @@ snapshots:
 
   '@one-ini/wasm@0.1.1': {}
 
-  '@onu-ui/components@1.0.14-beta.2(vue@3.4.23(typescript@5.4.5))':
-    dependencies:
-      '@onu-ui/preset': 1.0.14-beta.2
-      '@onu-ui/utils': 1.0.14-beta.2(vue@3.4.23(typescript@5.4.5))
-      '@vueuse/core': 9.13.0(vue@3.4.23(typescript@5.4.5))
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - vue
-
-  '@onu-ui/preset@1.0.14-beta.2': {}
-
-  '@onu-ui/utils@1.0.14-beta.2(vue@3.4.23(typescript@5.4.5))':
-    dependencies:
-      vue: 3.4.23(typescript@5.4.5)
-
   '@pkgr/core@0.1.1': {}
 
   '@polka/url@1.0.0-next.24': {}
-
-  '@popperjs/core@2.11.8': {}
 
   '@rollup/pluginutils@5.1.0(rollup@4.14.3)':
     dependencies:
@@ -5186,17 +3832,6 @@ snapshots:
       - supports-color
       - typescript
 
-  '@sveltejs/package@2.3.1(svelte@4.2.15)(typescript@5.4.5)':
-    dependencies:
-      chokidar: 3.6.0
-      kleur: 4.1.5
-      sade: 1.8.1
-      semver: 7.6.0
-      svelte: 4.2.15
-      svelte2tsx: 0.7.8(svelte@4.2.15)(typescript@5.4.5)
-    transitivePeerDependencies:
-      - typescript
-
   '@types/eslint@8.56.9':
     dependencies:
       '@types/estree': 1.0.5
@@ -5219,8 +3854,6 @@ snapshots:
   '@types/semver@7.5.8': {}
 
   '@types/unist@2.0.9': {}
-
-  '@types/web-bluetooth@0.0.16': {}
 
   '@types/web-bluetooth@0.0.20': {}
 
@@ -5885,8 +4518,6 @@ snapshots:
       '@vue/compiler-dom': 3.4.23
       '@vue/shared': 3.4.23
 
-  '@vue/devtools-api@6.5.1': {}
-
   '@vue/devtools-core@7.1.3(vite@5.2.9(@types/node@20.12.7))(vue@3.4.23(typescript@5.4.5))':
     dependencies:
       '@vue/devtools-kit': 7.1.3(vue@3.4.23(typescript@5.4.5))
@@ -5976,28 +4607,9 @@ snapshots:
       - '@vue/composition-api'
       - vue
 
-  '@vueuse/core@9.13.0(vue@3.4.23(typescript@5.4.5))':
-    dependencies:
-      '@types/web-bluetooth': 0.0.16
-      '@vueuse/metadata': 9.13.0
-      '@vueuse/shared': 9.13.0(vue@3.4.23(typescript@5.4.5))
-      vue-demi: 0.14.7(vue@3.4.23(typescript@5.4.5))
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - vue
-
   '@vueuse/metadata@10.9.0': {}
 
-  '@vueuse/metadata@9.13.0': {}
-
   '@vueuse/shared@10.9.0(vue@3.4.23(typescript@5.4.5))':
-    dependencies:
-      vue-demi: 0.14.7(vue@3.4.23(typescript@5.4.5))
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - vue
-
-  '@vueuse/shared@9.13.0(vue@3.4.23(typescript@5.4.5))':
     dependencies:
       vue-demi: 0.14.7(vue@3.4.23(typescript@5.4.5))
     transitivePeerDependencies:
@@ -6026,8 +4638,6 @@ snapshots:
       fast-json-stable-stringify: 2.1.0
       json-schema-traverse: 0.4.1
       uri-js: 4.4.1
-
-  ansi-colors@4.1.3: {}
 
   ansi-escapes@6.2.0:
     dependencies:
@@ -6061,6 +4671,7 @@ snapshots:
   aria-query@5.3.0:
     dependencies:
       dequal: 2.0.3
+    optional: true
 
   array-union@2.1.0: {}
 
@@ -6089,20 +4700,7 @@ snapshots:
   axobject-query@4.0.0:
     dependencies:
       dequal: 2.0.3
-
-  baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1):
-    dependencies:
-      '@baiwusanyu/utils-com': 1.0.18(ansi-colors@4.1.3)(hash-sum@2.0.0)
-      '@baiwusanyu/utils-date': 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-      '@baiwusanyu/utils-is': 1.0.18
-      '@baiwusanyu/utils-log': 1.0.18(ansi-colors@4.1.3)
-      '@baiwusanyu/utils-normalize': 1.0.18
-      '@baiwusanyu/utils-obj': 1.0.18
-      '@baiwusanyu/utils-task': 1.0.18
-      hash-sum: 2.0.0
-    transitivePeerDependencies:
-      - ansi-colors
-      - moment
+    optional: true
 
   balanced-match@1.0.2: {}
 
@@ -6214,8 +4812,6 @@ snapshots:
       strip-ansi: 6.0.1
       wrap-ansi: 7.0.0
 
-  clsx@2.1.1: {}
-
   code-red@1.0.4:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.4.15
@@ -6223,6 +4819,7 @@ snapshots:
       acorn: 8.11.3
       estree-walker: 3.0.3
       periscopic: 3.1.0
+    optional: true
 
   color-convert@1.9.3:
     dependencies:
@@ -6289,8 +4886,6 @@ snapshots:
       whatwg-mimetype: 4.0.0
       whatwg-url: 14.0.0
 
-  dayjs@1.11.11: {}
-
   de-indent@1.0.2: {}
 
   debug@3.2.7:
@@ -6302,8 +4897,6 @@ snapshots:
       ms: 2.1.2
 
   decimal.js@10.4.3: {}
-
-  dedent-js@1.0.1: {}
 
   deep-eql@4.1.3:
     dependencies:
@@ -6326,7 +4919,8 @@ snapshots:
 
   delayed-stream@1.0.0: {}
 
-  dequal@2.0.3: {}
+  dequal@2.0.3:
+    optional: true
 
   destr@2.0.3: {}
 
@@ -6680,8 +5274,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  esm-env@1.0.0: {}
-
   espree@10.0.1:
     dependencies:
       acorn: 8.11.3
@@ -6873,8 +5465,6 @@ snapshots:
 
   has-flag@4.0.0: {}
 
-  hash-sum@2.0.0: {}
-
   hasown@2.0.0:
     dependencies:
       function-bind: 1.1.2
@@ -6987,6 +5577,7 @@ snapshots:
   is-reference@3.0.2:
     dependencies:
       '@types/estree': 1.0.5
+    optional: true
 
   is-stream@2.0.1: {}
 
@@ -7082,8 +5673,6 @@ snapshots:
 
   kleur@3.0.3: {}
 
-  kleur@4.1.5: {}
-
   kolorist@1.8.0: {}
 
   levn@0.4.1:
@@ -7126,7 +5715,8 @@ snapshots:
       mlly: 1.6.1
       pkg-types: 1.0.3
 
-  locate-character@3.0.0: {}
+  locate-character@3.0.0:
+    optional: true
 
   locate-path@5.0.0:
     dependencies:
@@ -7155,10 +5745,6 @@ snapshots:
   loupe@2.3.7:
     dependencies:
       get-func-name: 2.0.2
-
-  lower-case@2.0.2:
-    dependencies:
-      tslib: 2.6.2
 
   lru-cache@5.1.1:
     dependencies:
@@ -7247,10 +5833,6 @@ snapshots:
       pkg-types: 1.0.3
       ufo: 1.5.3
 
-  moment@2.30.1: {}
-
-  mri@1.2.0: {}
-
   mrmime@2.0.0: {}
 
   ms@2.1.2: {}
@@ -7266,11 +5848,6 @@ snapshots:
   natural-compare-lite@1.4.0: {}
 
   natural-compare@1.4.0: {}
-
-  no-case@3.0.4:
-    dependencies:
-      lower-case: 2.0.2
-      tslib: 2.6.2
 
   node-fetch-native@1.6.4: {}
 
@@ -7320,13 +5897,6 @@ snapshots:
   onetime@6.0.0:
     dependencies:
       mimic-fn: 4.0.0
-
-  onu-ui@1.0.14-beta.2(vue@3.4.23(typescript@5.4.5)):
-    dependencies:
-      '@onu-ui/components': 1.0.14-beta.2(vue@3.4.23(typescript@5.4.5))
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - vue
 
   open@10.1.0:
     dependencies:
@@ -7400,11 +5970,6 @@ snapshots:
     dependencies:
       entities: 4.5.0
 
-  pascal-case@3.1.2:
-    dependencies:
-      no-case: 3.0.4
-      tslib: 2.6.2
-
   path-browserify@1.0.1: {}
 
   path-exists@4.0.0: {}
@@ -7430,6 +5995,7 @@ snapshots:
       '@types/estree': 1.0.5
       estree-walker: 3.0.3
       is-reference: 3.0.2
+    optional: true
 
   picocolors@1.0.0: {}
 
@@ -7573,10 +6139,6 @@ snapshots:
     dependencies:
       queue-microtask: 1.2.3
 
-  sade@1.8.1:
-    dependencies:
-      mri: 1.2.0
-
   safer-buffer@2.1.2: {}
 
   saxes@6.0.0:
@@ -7626,8 +6188,6 @@ snapshots:
     dependencies:
       ansi-styles: 6.2.1
       is-fullwidth-code-point: 5.0.0
-
-  smoke-distance@1.0.3: {}
 
   source-map-js@1.2.0: {}
 
@@ -7706,20 +6266,6 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  svelte-infinite-scroll@2.0.1: {}
-
-  svelte-popperjs@1.3.2(@popperjs/core@2.11.8)(svelte@4.2.15):
-    dependencies:
-      '@popperjs/core': 2.11.8
-      svelte: 4.2.15
-
-  svelte2tsx@0.7.8(svelte@4.2.15)(typescript@5.4.5):
-    dependencies:
-      dedent-js: 1.0.1
-      pascal-case: 3.1.2
-      svelte: 4.2.15
-      typescript: 5.4.5
-
   svelte@4.2.15:
     dependencies:
       '@ampproject/remapping': 2.3.0
@@ -7736,6 +6282,7 @@ snapshots:
       locate-character: 3.0.0
       magic-string: 0.30.10
       periscopic: 3.1.0
+    optional: true
 
   svg-tags@1.0.0: {}
 
@@ -7768,8 +6315,6 @@ snapshots:
   text-table@0.2.0: {}
 
   tinybench@2.5.1: {}
-
-  tinycolor2@1.6.0: {}
 
   tinypool@0.8.4: {}
 
@@ -7978,27 +6523,6 @@ snapshots:
       - vite
       - webpack
 
-  unplugin-vue-router@0.8.6(rollup@4.14.3)(vue-router@4.3.2(vue@3.4.23(typescript@5.4.5)))(vue@3.4.23(typescript@5.4.5)):
-    dependencies:
-      '@babel/types': 7.24.0
-      '@rollup/pluginutils': 5.1.0(rollup@4.14.3)
-      '@vue-macros/common': 1.10.2(rollup@4.14.3)(vue@3.4.23(typescript@5.4.5))
-      ast-walker-scope: 0.6.1
-      chokidar: 3.6.0
-      fast-glob: 3.3.2
-      json5: 2.2.3
-      local-pkg: 0.5.0
-      mlly: 1.6.1
-      pathe: 1.1.2
-      scule: 1.3.0
-      unplugin: 1.10.1
-      yaml: 2.4.1
-    optionalDependencies:
-      vue-router: 4.3.2(vue@3.4.23(typescript@5.4.5))
-    transitivePeerDependencies:
-      - rollup
-      - vue
-
   unplugin@1.10.1:
     dependencies:
       acorn: 8.11.3
@@ -8157,11 +6681,6 @@ snapshots:
       semver: 7.6.0
     transitivePeerDependencies:
       - supports-color
-
-  vue-router@4.3.2(vue@3.4.23(typescript@5.4.5)):
-    dependencies:
-      '@vue/devtools-api': 6.5.1
-      vue: 3.4.23(typescript@5.4.5)
 
   vue-template-compiler@2.7.15:
     dependencies:
